@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_chose_language">
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="150dp">
+            <RadioButton
+                android:id="@+id/vietNamese"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+            <RadioButton
+                android:id="@+id/english"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="5dp"
+                android:checked="true"/>
+        </RadioGroup>
+    </RelativeLayout>
+</RelativeLayout>

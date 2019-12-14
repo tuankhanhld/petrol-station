@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tuank.petrol_station">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WellcomScreen"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".screen_signup" />
+        <activity android:name=".screen_verify" />
+        <activity android:name=".screen_scan" />
+        <activity
+            android:name=".scr_home"
+            android:label="@string/title_activity_scr_home" />
+        <activity android:name=".screen_getstart" />
+        <activity android:name=".PaymentScreen" />
+        <activity android:name=".ChoseAvatar" />
+        <activity android:name=".Transfer_screen" />
+        <activity android:name=".SubTransfer_screen" />
+        <activity android:name=".SubAddMoney_screen" />
+        <activity android:name=".HistoryTransactions" />
+        <activity android:name=".ViewHistoryRecharge" />
+        <activity android:name=".ViewHistoryTransfer" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".HelpCenterScreen" />
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".ChosePrivacySettings" />
+        <activity android:name=".ChangeCardPinCode" />
+        <activity android:name=".ChangeCardPinCodeNew" />
+        <activity android:name=".ChangeCardPinCodeConfirm" />
+        <activity android:name=".LostCardNotify" />
+        <activity android:name=".NotificationMessageScreen" />
+        <activity android:name=".NotificationLostCard" />
+        <activity android:name=".FingerprintLogin" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".RecentStationMap"
+            android:label="@string/title_activity_recent_station_map" />
+        <activity android:name=".MessageBox"></activity>
+    </application>
+
+</manifest>

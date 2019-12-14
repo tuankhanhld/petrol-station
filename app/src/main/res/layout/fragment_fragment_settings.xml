@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment_settings"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/top_setting_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/gradient_top">
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_settings_top"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp">
+                    <RelativeLayout
+                        android:id="@+id/infor_top_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="25dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/avt_home_settings"
+                            android:layout_width="54.6dp"
+                            android:layout_height="54.6dp"
+                            app:civ_border_color="#ffffff"
+                            app:civ_border_width="3dp" />
+                        <TextView
+                            android:id="@+id/name_home_settings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/montserrat_bold"
+                            android:layout_toRightOf="@+id/avt_home_settings"
+                            android:layout_marginLeft="16dp"/>
+                        <TextView
+                            android:id="@+id/phone_number_settings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:textColor="#d0000000"
+                            android:fontFamily="@font/montserrat"
+                            android:layout_toRightOf="@+id/avt_home_settings"
+                            android:layout_below="@+id/name_home_settings"
+                            android:layout_marginLeft="16dp"/>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="120dp"
+                        android:layout_centerHorizontal="true">
+
+                        <Button
+                            android:id="@+id/btnSignoutSetting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#00ffffff"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/Log_out"
+                            android:textAllCaps="false"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/btnExit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="110dp"
+                            android:background="#00ffffff"
+                            android:fontFamily="@font/montserrat"
+                            android:text="@string/Exit"
+                            android:textAllCaps="false"
+                            android:textColor="#000000"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/body_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_setting_container"
+                android:layout_marginTop="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/row1_body_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gen_settings_back"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="@string/General"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                    <LinearLayout
+                        android:id="@+id/col1_gen_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="45dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginTop="3dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/Notification"
+                                android:textColor="#29292E"
+                                android:textSize="16sp" />
+                            <Switch
+                                android:id="@+id/swPermissionNotifi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="25dp"
+                                />
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/passCodeFingerprint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginTop="3dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/Touch_ID"
+                                android:textColor="#29292E"
+                                android:textSize="16sp" />
+                            <Switch
+                                android:id="@+id/fingerprintPermission"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="25dp"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/privacySettings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/Privacy"
+                                android:textColor="#29292E"
+                                android:textSize="16sp" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/show_settings"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="30dp"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:id="@+id/languageSettings"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="18dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/language"
+                                android:textColor="#29292E"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/row2_body_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/acc_settings_back"
+                    android:layout_below="@+id/row1_body_settings"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="@string/Response"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="47dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <TextView
+                                android:id="@+id/helpCenter"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/Help_center"
+                                android:textColor="#29292E"
+                                android:textSize="16sp" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/show_settings"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="30dp"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="60dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="@string/Feed_back"
+                                android:textColor="#29292E"
+                                android:textSize="16sp" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/show_settings"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="30dp"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

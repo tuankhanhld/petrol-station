@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_home"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp"
+            >
+        <RelativeLayout
+            android:id="@+id/action_buy_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:layout_centerHorizontal="true"
+            >
+            <ImageView
+                android:id="@+id/img_lb_buy_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/buynow" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_lb_buy_home"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_container_buy_home">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btngas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btngas" />
+
+                    <Button
+                        android:id="@+id/btnoil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:background="@drawable/btnoil" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtLabelFriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/action_buy_container"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/title_3"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/userRecycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLabelFriends"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="16dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/txtlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userRecycle"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/title_1"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/securityRecycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtlabel"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/txtRecent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/securityRecycle"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/title_2"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/findStationRecycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRecent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/gradient_top">
+            <ImageView
+                android:id="@+id/notificationRingHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/notification_ring_home"
+                />
+            <RelativeLayout
+                android:id="@+id/infor_top_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avt_home"
+                    android:layout_width="54.6dp"
+                    android:layout_height="54.6dp"
+                    app:civ_border_color="#ffffff"
+                    app:civ_border_width="3dp"/>
+                <TextView
+                    android:id="@+id/name_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto_light"
+                    android:layout_toRightOf="@+id/avt_home"
+                    android:layout_marginLeft="16dp"/>
+                <TextView
+                    android:id="@+id/phone_number_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto_light"
+                    android:layout_toRightOf="@+id/avt_home"
+                    android:layout_below="@+id/name_home"
+                    android:layout_marginLeft="16dp"/>
+            </RelativeLayout>
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_view_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_profiles_container"
+                android:layout_marginLeft="20dp"
+                app:duration="300"
+                android:layout_marginTop="20dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <include layout="@layout/user_information_placeholder_item" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/menu_top_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_top_home"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/txtMyBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_balance"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_light"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/money_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_light"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:layout_alignParentRight="true"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:layout_centerHorizontal="true">
+                <LinearLayout
+                    android:id="@+id/top1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/btn_addmoney_home"
+                        android:layout_width="57dp"
+                        android:layout_height="57dp"
+                        android:background="@drawable/bg_pressed_addmoney"/>
+                    <Button
+                        android:id="@+id/btnLostCardHome"
+                        android:layout_width="57dp"
+                        android:layout_height="57dp"
+
+                        android:layout_marginLeft="75dp"
+                        android:layout_toRightOf="@+id/btn_addmoney_home"
+                        android:background="@drawable/bg_pressed_lost_card"/>
+                    <Button
+                        android:id="@+id/btn_transfer_home"
+                        android:layout_width="57dp"
+                        android:layout_height="57dp"
+                        android:layout_marginLeft="75dp"
+                        android:layout_toRightOf="@+id/btnLostCardHome"
+                        android:background="@drawable/bg_pressed_transfer"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/top2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top1">
+
+                    <TextView
+                        android:id="@+id/txtAddmoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_money"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtLostCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:text="@string/lost_card"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txtTrans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="75dp"
+                        android:text="@string/transfer"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

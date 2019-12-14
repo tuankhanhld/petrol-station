@@ -1,0 +1,159 @@
+<resources>
+    <string name="app_name">Petrol Station</string>
+    <string name="title_activity_scr_home">scr_home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--login screen-->
+    <string name="forgot">forgot password?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">sign up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="repass">Re-type password</string>
+    <string name="reset_pass">RESET PASSWORD</string>
+    <string name="back_to_login">Back to sign in</string>
+
+    <!--fragment home-->
+    <string name="add_money">Add Money</string>
+    <string name="lost_card">Lost Card</string>
+    <string name="transfer">Transfer</string>
+    <string name="title_1">Card security</string>
+    <string name="rc_1">Lose the card</string>
+    <string name="rc_2">Detect unauthorized card users</string>
+    <string name="title_2">Find recent station</string>
+    <string name="title_3">Recent Users</string>
+    <string name="rc_3">Looking for recent station</string>
+    <string name="view">View details</string>
+    <string name="my_balance">My Balance</string>
+    <!--fragment gasoline-->
+    <string name="Gasoline">GASOLINE</string>
+    <string name="Oil">DẦU</string>
+    <string name="fill_money">Fill amount of Gasoline</string>
+    <string name="go_to_payment">Go to payment</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="Account">Account</string>
+    <string name="press_btn">Press button to get Fuel</string>
+    <string name="ok">OK</string>
+    <string name="Amount">Amount</string>
+    <string name="scan">Scan QR code on station</string>
+    <!--recharge-->
+    <string name="Enter_series">Enter Series</string>
+    <string name="my_acc">My account</string>
+    <string name="Card_value">Card value</string>
+    <string name="Recharge">Recharge</string>
+    <string name="Series_number">Series number</string>
+
+    <!--transfer-->
+    <string name="Enter_amount">Enter amount money</string>
+    <string name="Transfer">Transfer</string>
+    <string name="From">From</string>
+    <string name="To">To</string>
+
+    <!--fragment profiles-->
+    <string name="Feed_back">Feed back</string>
+    <string name="Edit_profiles">Edit profiles</string>
+    <string name="Mobile">Mobile</string>
+    <string name="Address">Address</string>
+    <string name="Date_of_birth">Date of birth</string>
+    <string name="ID_card">ID card</string>
+    <string name="Day_of_actived">Day of actived</string>
+
+    <!--fragment settings-->
+    <string name="Log_out">Log out</string>
+    <string name="Exit">Exit</string>
+    <string name="Notification">Notification</string>
+    <string name="Touch_ID">Touch ID and Passcode</string>
+    <string name="Privacy">Privacy</string>
+    <string name="Help_center">Help center</string>
+    <string name="language">Languages</string>
+    <string name="General">General</string>
+    <string name="Response">Opinions</string>
+    <!--fragment edit-->
+    <string name="Your_name">Your name</string>
+    <string name="Gender">Gender</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Phone_number">Phone number</string>
+    <string name="Save_change">Save change</string>
+    <!--notification-->
+    <string name="Messages">Messages</string>
+    <string name="Lost_card">Lost card</string>
+    <string name="Home">Home</string>
+    <string name="History">History</string>
+    <string name="Settings">Settings</string>
+    <string name="Content">Content</string>
+    <!--fragment history-->
+    <string name="Transactions">Transactions</string>
+    <string name="All_recharge_transactions">All recharge transactions are recorded</string>
+    <string name="View_history">View history</string>
+    <string name="All_transfer_transactions">All transfer transactions are recorded</string>
+    <string name="All_trading_activities">All trading activities are recorded</string>
+
+    <!--dialog-->
+    <string name="Scan_your_fingerprint">Scan your fingerprint</string>
+    <string name="cancel">Cancel</string>
+    <string name="Scan1">Scan</string>
+    <string name="Money">Money</string>
+    <string name="Thank_you">Thank you!</string>
+    <string name="Your_transaction_was_successful">Your transaction was successful</string>
+    <!--lost card-->
+    <string name="drop1">Notify us when you unfortunately lose the card</string>
+    <string name="drop2">Your card will be deleted, please go to the nearest gas station to create new card</string>
+    <string name="hack1">Notify us when you detect unauthorized card users</string>
+    <string name="hack2">Ok! fFrom now if there is anyone using your card we will notify for you</string>
+    <string name="Detect_card">Detect card</string>
+    <string name="detect_title1">Detected person using your card!</string>
+    <string name="is_that_you">Is that you?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="tap_see_details">Tap to see details</string>
+    <!--search-->
+    <string name="Search_for_name">Search for name</string>
+    <string name="Search_for_date">Search for date</string>
+    <!--change PIN-->
+    <string name="title_old_pin">Enter your old PIN code below</string>
+    <string name="Change">Change</string>
+    <string name="title_new_pin">Enter your new PIN code below</string>
+    <string name="title_final_pin">Enter your new PIN code below</string>
+    <string name="Confirm">Confirm</string>
+    <!--change pass-->
+    <string name="title_new_pass">Enter your new password below</string>
+    <string name="Old_password">Old password</string>
+    <string name="New_password">New password</string>
+    <string name="Confirm_password">Confirm password</string>
+    <!--finger print-->
+    <string name="Register_your_passcode">Register your passcode</string>
+    <string name="Register_done">Done! then scan your fingerprint</string>
+    <string name="ADD">Add</string>
+    <string name="empty_password">empty password</string>
+    <!--help center-->
+    <string name="help_title">Have a query? Write us and we will
+response within 24 hrs</string>
+    <string name="Subject">Title</string>
+    <string name="write_question">Write your question here</string>
+    <string name="Send">Send</string>
+
+    <!--privacy settings-->
+    <string name="Change_pass">Change password</string>
+    <string name="Change_pin_card">Change card PIN code</string>
+    <!--chose avatar-->
+    <string name="Capture_image">Capture image</string>
+    <string name="Chose_gallery">Chose gallery</string>
+    <string name="CHOSE_AVATAR">CHOSE AVATAR</string>
+    <string name="title_activity_recent_station_map">Map</string>
+
+    //make card
+    <string name="fee">Fee</string>
+    <string name="confirm_make">Press button below to confirm</string>
+    <string name="Place_making_card">Place making card</string>
+    <string name="You_must_pay_a_fee_to_make">You must pay a fee to make</string>
+    <string name="making_card">Please come to the nearest gas \n station to make the card</string>
+
+</resources>

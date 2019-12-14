@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_edit"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/top_edit_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="132dp"
+                    android:background="@drawable/bg_top_edit">
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrowback"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/avtar_edit"
+                    android:layout_width="113.5dp"
+                    android:layout_height="113.5dp"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="#ffffff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/avatar_edit_top"
+                    android:layout_width="113.5dp"
+                    android:layout_height="113.5dp"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="#ffffff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    android:background="@drawable/over_change_photo"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/body_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_edit_container"
+                android:layout_marginLeft="16dp">
+                <TextView
+                    android:id="@+id/descr_fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="@string/Date_of_birth"
+                    android:textColor="#CF338B"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/dateOB"
+                    android:layout_width="311dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:layout_below="@id/descr_fname" />
+
+                <TextView
+                    android:id="@+id/descr_lname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="@string/Your_name"
+                    android:textColor="#CF338B"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/dateOB"/>
+
+                <EditText
+                    android:id="@+id/l_name"
+                    android:layout_width="311dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="Khanh"
+                    android:layout_below="@+id/descr_lname"/>
+                <TextView
+                    android:id="@+id/descr_c_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="@string/Gender"
+                    android:textColor="#CF338B"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/l_name"/>
+
+                <CheckBox
+                    android:id="@+id/c_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="61dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/descr_c_male"/>
+
+                <TextView
+                    android:id="@+id/descr_c_fmale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="101dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="@string/Male"
+                    android:textColor="#01AF86"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/descr_c_male"/>
+
+                <CheckBox
+                    android:id="@+id/c_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="202dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/descr_c_male"/>
+
+                <TextView
+                    android:id="@+id/descr_c_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="240dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="@string/Female"
+                    android:textColor="#01AF86"
+                    android:textSize="12sp"
+                    android:layout_below="@id/descr_c_male"/>
+
+                <TextView
+                    android:id="@+id/descr_email_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="@string/email"
+                    android:textColor="#CF338B"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/descr_c_male"/>
+
+                <EditText
+                    android:id="@+id/email_edit"
+                    android:layout_width="311dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="Tuankhanhspkt@gmail.com"
+                    android:layout_below="@+id/descr_email_edit"/>
+
+                <TextView
+                    android:id="@+id/descr_local_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="@string/Address"
+                    android:textColor="#CF338B"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/email_edit"/>
+
+                <EditText
+                    android:id="@+id/local_edit"
+                    android:layout_width="301dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="Khanh"
+                    android:layout_below="@id/descr_local_edit"/>
+                <TextView
+                    android:id="@+id/descr_phone_e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="@string/Phone_number"
+                    android:textColor="#CF338B"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/local_edit"/>
+                <EditText
+                    android:id="@+id/phone_e"
+                    android:layout_width="311dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="0962443310"
+                    android:layout_below="@+id/descr_phone_e"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/body_edit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                >
+                <Button
+                    android:id="@+id/btnsave_e"
+                    android:layout_width="144dp"
+                    android:layout_height="32dp"
+                    android:text="Save change"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto"
+                    android:background="@drawable/button_wave_eff" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

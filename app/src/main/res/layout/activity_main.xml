@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/shape_gradient_home">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/img_logo_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/safe_bg_login">
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fill_container_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_logo_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp">
+
+
+                <EditText
+                    android:id="@+id/Emaillog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="50dp"
+                    android:text="tuankhanhspkt@gmail.com"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#d3ffffff"
+                    android:textSize="17sp"
+                    android:background="@drawable/bg_fill_email_log"/>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Emaillog"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="50dp"
+                    android:text="tuankhanh"
+                    android:textColor="#ffff"
+                    android:textColorHint="#abffffff"
+                    android:background="@drawable/bg_fill_pass_log"/>
+
+                <Button
+                    android:id="@+id/btnshow"
+                    android:layout_width="35.83dp"
+                    android:layout_height="19.5dp"
+                    android:background="@drawable/hide"
+                    android:layout_below="@id/Emaillog"
+                    android:layout_marginLeft="260dp"
+                    android:layout_marginTop="30dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/signin_btn_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fill_container_login"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true">
+                <Button
+                    android:id="@+id/btnforgot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:background="#003325a8"
+                    android:fontFamily="@font/roboto_light_italic"
+                    android:text="@string/forgot"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_centerHorizontal="true"/>
+                <ProgressBar
+                    android:id="@+id/proGressbar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_centerHorizontal="true"
+                    />
+                <Button
+                    android:id="@+id/btnsignin"
+                    android:layout_width="328dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1C43E1"
+                    android:textSize="12pt"
+                    android:text="@string/sign_in"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:background="@drawable/button_wave_eff_login"
+                    android:layout_below="@id/btnforgot"
+                    android:layout_marginTop="20dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/change_btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnsignin1"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="50dp"
+            android:background="#5FD59E"
+            android:fontFamily="@font/roboto"
+            android:text="@string/sign_in"
+            android:textColor="#22439B" />
+        <Button
+            android:id="@+id/btnsignup1"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="50dp"
+            android:background="#A7EBBE"
+            android:text="@string/sign_up"
+            android:fontFamily="@font/roboto"
+            android:textColor="#22439B"
+            android:layout_alignParentRight="true"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

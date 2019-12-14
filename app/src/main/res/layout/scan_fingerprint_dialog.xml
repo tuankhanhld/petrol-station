@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="200dp"
+    android:layout_height="250dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/fingerprint_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_baseline_fingerprint"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:textColor="#1ca419"
+            android:layout_below="@+id/fingerprint_icon"
+            android:text="@string/Scan_your_fingerprint"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/btnCancelDialog"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/txtStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="29dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_wave_eff"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_transfer_cell"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="170dp"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/nameSearchTransfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Viet Khoi"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat_bold" />
+            <TextView
+                android:id="@+id/rfidSearchTransfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21535462559"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/montserrat"
+                android:layout_below="@+id/nameSearchTransfer" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

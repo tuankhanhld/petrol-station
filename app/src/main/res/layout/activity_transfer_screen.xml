@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transfer_screen">
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/effect_btn_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"/>
+    <RelativeLayout
+        android:id="@+id/serch_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_search_eff"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:id="@+id/nameSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/Search_for_name"
+                android:textColorHint="#8E8787"
+                android:background="@color/white"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/listviewSearchUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/serch_container"
+        android:layout_marginTop="40dp"
+        android:layout_centerVertical="true">
+
+    </ListView>
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FingerprintLogin"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/effect_btn_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"/>
+    <LinearLayout
+        android:id="@+id/img_top"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/change_pass_settings_top"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/Register_your_passcode"
+            android:textAlignment="center"
+            android:textColor="#5D5555"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_top"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/change_pass_settings_edit">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#00FFFFFF"
+            android:fontFamily="@font/montserrat_bold"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/fingerprint_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_baseline_fingerprint"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_top"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/button_wave_eff"
+        android:text="@string/ok"
+        android:textColor="@color/white"
+        android:layout_below="@+id/body"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/button_wave_eff"
+        android:text="@string/ADD"
+        android:textColor="@color/white"
+        android:layout_below="@+id/body"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

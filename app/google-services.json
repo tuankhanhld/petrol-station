@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "448961224175",
+    "firebase_url": "https://fuelapp-c00b1.firebaseio.com",
+    "project_id": "fuelapp-c00b1",
+    "storage_bucket": "fuelapp-c00b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448961224175:android:39abfbcd9665ea81",
+        "android_client_info": {
+          "package_name": "com.example.tuank.fuel_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448961224175-28rfp6hno8qomrglovdbpaci38okvcfg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tuank.fuel_app",
+            "certificate_hash": "6451a5a4644fa5029ff1078e191d426d298afd68"
+          }
+        },
+        {
+          "client_id": "448961224175-mf4qtfc0bgaca6aaogphah1hgm67ds4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tuank.fuel_app",
+            "certificate_hash": "fd1a40af2a02b3aaf7389219a27608d496bc396c"
+          }
+        },
+        {
+          "client_id": "448961224175-vr1u704ok918077h68ri1am14u0j9djq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxZbnyxh0r9ckdDn6r40mlu_EcdcCm16A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448961224175-vr1u704ok918077h68ri1am14u0j9djq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448961224175:android:786a22a6e4b6815c",
+        "android_client_info": {
+          "package_name": "com.example.tuank.petrol_station"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448961224175-k9vhotgv28sbdqe57b6ecvdd4feka09l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tuank.petrol_station",
+            "certificate_hash": "fd1a40af2a02b3aaf7389219a27608d496bc396c"
+          }
+        },
+        {
+          "client_id": "448961224175-vr1u704ok918077h68ri1am14u0j9djq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxZbnyxh0r9ckdDn6r40mlu_EcdcCm16A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448961224175-vr1u704ok918077h68ri1am14u0j9djq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_profiles"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/top_profiles_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/top_profiles_subcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="132dp"
+                    android:background="@drawable/bg_top_edit"
+                    >
+
+                    <TextView
+                        android:id="@+id/name_pro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Tuan Khanh"
+                        android:textColor="#ffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/name_pro"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="(Male)"
+                        android:textColor="#FFF460"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_feedback_profiles"
+                    android:layout_width="99dp"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="150dp"
+                    android:background="@drawable/button_wave_effect"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/Feed_back"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imgAvtPro"
+                    android:layout_width="113.5dp"
+                    android:layout_height="113.5dp"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="#ffffff"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    />
+
+                <Button
+                    android:id="@+id/btnedit"
+                    android:layout_width="99dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="150dp"
+                    android:background="@drawable/button_wave_effect"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/Edit_profiles"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/personal_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/framepro"
+                android:layout_below="@id/top_profiles_container"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/num_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#254057"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15sp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="77dp"
+                    />
+                <TextView
+                    android:id="@+id/descr_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile"
+                    android:textColor="#254057"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="77dp"/>
+
+                <TextView
+                    android:id="@+id/email_pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#254057"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="77dp"/>
+                <TextView
+                    android:id="@+id/descr_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textColor="#254057"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="12sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="77dp"/>
+
+                <TextView
+                    android:id="@+id/address_pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#254057"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="77dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Address"
+                    android:textColor="#254057"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="12sp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="77dp"/>
+                <TextView
+                    android:id="@+id/dateOfBirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#254057"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="15sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="77dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Date_of_birth"
+                    android:textColor="#254057"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="12sp"
+                    android:layout_below="@id/address_pro"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="77dp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/acc_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/framepro1"
+                android:layout_below="@id/personal_container"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/card_id_pro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#254057"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15sp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginLeft="77dp"
+                        />
+                    <TextView
+                        android:id="@+id/descr_card_id_pro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ID_card"
+                        android:textColor="#254057"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/card_id_pro"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginLeft="77dp"/>
+
+                    <TextView
+                        android:id="@+id/card_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#254057"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="15sp"
+                        android:layout_below="@+id/descr_card_id_pro"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="77dp"/>
+                    <TextView
+                        android:id="@+id/descr_card_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Day_of_actived"
+                        android:textColor="#254057"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/card_date"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="77dp"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_view_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_profiles_container"
+                android:layout_marginLeft="77dp"
+                app:duration="300"
+                android:layout_marginTop="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="50dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <include layout="@layout/user_profiles_placeholder_item" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp">
+                        <include layout="@layout/user_profiles_placeholder_item"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="38dp">
+                        <include layout="@layout/user_profiles_placeholder_item"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="37dp">
+                        <include layout="@layout/user_profiles_placeholder_item"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="95dp">
+                        <include layout="@layout/user_profiles_placeholder_item"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp">
+                        <include layout="@layout/user_profiles_placeholder_item"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

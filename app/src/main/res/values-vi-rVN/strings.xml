@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Petrol Station</string>
+    <string name="title_activity_scr_home">scr_home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--login screen-->
+    <string name="forgot">Quên mật khẩu</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="name">Tên</string>
+    <string name="repass">Xác nhận mật khẩu</string>
+    <string name="reset_pass">ĐẶT LẠI MẬT KHẨU</string>
+    <string name="back_to_login">Trở về</string>
+
+    <!--fragment home-->
+    <string name="add_money">Nạp tiền</string>
+    <string name="lost_card">Thất lạc thẻ</string>
+    <string name="transfer">Chuyển tiền</string>
+    <string name="title_1">An toàn thẻ</string>
+    <string name="rc_1">Đánh rơi thẻ</string>
+    <string name="rc_2">Phát hiện thẻ sử dụng trái phép</string>
+    <string name="title_2">Tìm trụ xăng gần đây</string>
+    <string name="title_3">Người dùng gần đây</string>
+    <string name="rc_3">Tìm kiếm trụ xăng quanh bạn</string>
+    <string name="view">Xem chi tiết</string>
+    <string name="my_balance">Ngân sách</string>
+    <!--fragment gasoline-->
+    <string name="Gasoline">XĂNG</string>
+    <string name="Oil">DẦU</string>
+    <string name="fill_money">Nhập số tiền</string>
+    <string name="go_to_payment">Thanh toán</string>
+    <string name="date">Ngày</string>
+    <string name="time">Thời gian</string>
+    <string name="Account">Tài khoản</string>
+    <string name="press_btn">Nhấn nút trên trụ để lấy xăng</string>
+    <string name="ok">OK</string>
+    <string name="Amount">Số lượng</string>
+    <string name="scan">Quét mã QR trên trụ</string>
+    <!--recharge-->
+    <string name="Enter_series">Nhập mã thẻ</string>
+    <string name="my_acc">Tài khoản</string>
+    <string name="Card_value">Giá trị thẻ cào</string>
+    <string name="Recharge">Nạp tiền</string>
+    <string name="Series_number">Mã thẻ</string>
+    <!--transfer-->
+    <string name="Enter_amount">Nhập số tiền</string>
+    <string name="Transfer">Chuyển</string>
+    <string name="From">Người gửi</string>
+    <string name="To">Người nhận</string>
+    <!--fragment profiles-->
+    <string name="Feed_back">Đánh giá</string>
+    <string name="Edit_profiles">Chỉnh sửa</string>
+    <string name="Mobile">Mobile</string>
+    <string name="Address">Địa chỉ</string>
+    <string name="Date_of_birth">Ngày sinh</string>
+    <string name="ID_card">ID thẻ</string>
+    <string name="Day_of_actived">Ngày kích hoạt</string>
+
+    <!--fragment settings-->
+    <string name="Log_out">Đăng xuất</string>
+    <string name="Exit">Thoát</string>
+    <string name="Notification">Thông báo</string>
+    <string name="Touch_ID">Bảo mật vân tay</string>
+    <string name="Privacy">Bảo mật</string>
+    <string name="Help_center">Hỗ trợ</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="General">Cài đặt chung</string>
+    <string name="Response">Phản hồi</string>
+    <!--fragment edit-->
+    <string name="Your_name">Tên hiển thị</string>
+    <string name="Gender">Giới tính</string>
+    <string name="Male">Nam</string>
+    <string name="Female">Nữ</string>
+    <string name="Phone_number">Số điện thoại</string>
+    <string name="Save_change">Cập nhật</string>
+    <!--notification-->
+    <string name="Messages">Tin nhắn</string>
+    <string name="Lost_card">Mất thẻ</string>
+    <string name="Home">Home</string>
+    <string name="History">Lịch sử</string>
+    <string name="Settings">Cài đặt</string>
+    <string name="Content">Nội dung</string>
+    <!--fragment history-->
+    <string name="Transactions">Lịch sử giao dịch</string>
+    <string name="All_recharge_transactions">Tất cả các giao dịch nạp tiền</string>
+    <string name="View_history">Xem lịch sử</string>
+    <string name="All_transfer_transactions">Tất cả các giao dịch chuyển khoản</string>
+    <string name="All_trading_activities">Tất cả các giao dịch mua bán</string>
+
+    <!--dialog-->
+    <string name="Scan_your_fingerprint">Quét vân tay</string>
+    <string name="cancel">Hủy</string>
+    <string name="Scan1">Quét</string>
+    <string name="Money">Số tiền</string>
+    <string name="Thank_you">Cảm ơn bạn!</string>
+    <string name="Your_transaction_was_successful">Giao dịch thành công</string>
+    <!--lost card-->
+    <string name="drop1">Thông báo cho chúng tôi ngay khi bạn không may đánh rơi thẻ</string>
+    <string name="drop2">Thẻ của bạn sẽ bị xóa, đến trạm xăng gần nhất để làm lại</string>
+    <string name="hack1">Thông báo cho chúng tôi ngay khi phát hiện thẻ bị sử dụng trái phép</string>
+    <string name="hack2">Ok! Từ bây giờ mọi hoạt động với thẻ của bãn sẽ được thông báo</string>
+    <string name="Detect_card">Phát hiện thẻ</string>
+    <string name="detect_title1">Đã phát hiện người dùng thẻ trái phép</string>
+    <string name="is_that_you">Phải bạn không?</string>
+    <string name="yes">Phải</string>
+    <string name="no">Không</string>
+    <string name="tap_see_details">Nhấn xem chi tiết</string>
+    <!--search-->
+    <string name="Search_for_name">Tìm kiếm tên</string>
+    <string name="Search_for_date">Tìm kiếm ngày</string>
+
+    <!--change PIN-->
+    <string name="title_old_pin">Nhập mã PIN cũ</string>
+    <string name="Change">Thay đổi</string>
+    <string name="title_new_pin">Nhập mã PIN mới</string>
+    <string name="title_final_pin">Xác nhận mã PIN</string>
+    <string name="Confirm">Xác nhận</string>
+    <!--change pass-->
+    <string name="title_new_pass">Nhập mật khẩu mới bên dưới</string>
+    <string name="Old_password">Nhập mật khẩu cũ</string>
+    <string name="New_password">Nhập mật khẩu mới</string>
+    <string name="Confirm_password">Nhập lại mật khẩu</string>
+    <!--finger print-->
+    <string name="Register_your_passcode">Đăng ký passcode</string>
+    <string name="ADD">Thêm</string>
+    <string name="Register_done">Quét vân tay của bạn để hoàn thành</string>
+    <string name="empty_password">Chưa nhập password</string>
+    <!--help center-->
+    <string name="help_title">Bất cứ câu hỏi gì? chúng tôi sẽ trả lời sẽ trong vòng 24h</string>
+    <string name="Subject">Chủ đề</string>
+    <string name="write_question">Nhập nội dung dưới đây</string>
+    <string name="Send">Gửi</string>
+
+    <!--privacy settings-->
+    <string name="Change_pass">Đổi mật khẩu</string>
+    <string name="Change_pin_card">Đổi mã PIN thẻ</string>
+    <!--chose avatar-->
+    <string name="Capture_image">Chụp Hình</string>
+    <string name="Chose_gallery">Chọn thư viện</string>
+    <string name="CHOSE_AVATAR">Chọn hình</string>
+
+    //make card
+    <string name="fee">Fee</string>
+    <string name="confirm_make">Press button below to confirm</string>
+    <string name="Place_making_card">Place making card</string>
+    <string name="You_must_pay_a_fee_to_make">You must pay a fee to make</string>
+    <string name="making_card">Vui lòng đến trạm xăng \n gần nhất để làm thẻ</string>
+
+</resources>

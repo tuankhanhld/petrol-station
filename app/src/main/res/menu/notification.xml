@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/Messages"
+        android:id="@+id/no_mess"
+        android:icon="@drawable/notimess_icon"/>
+    <item android:title="@string/lost_card"
+        android:id="@+id/no_card"
+        android:icon="@drawable/noti_card_icon"/>
+</menu>

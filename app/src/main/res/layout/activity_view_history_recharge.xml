@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewHistoryRecharge">
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/effect_btn_back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="23dp"/>
+
+    <LinearLayout
+        android:id="@+id/search_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:id="@+id/serch_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bg"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+                <ImageView
+                    android:id="@+id/btnSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_search_eff"
+                    android:layout_marginLeft="20dp"/>
+                <EditText
+                    android:id="@+id/nameSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="@string/Search_for_date"
+                    android:textColorHint="#8E8787"
+                    android:background="@color/white"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listViewHistoryRecharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:outlineProvider="none"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/search_container"
+        android:divider="@null"
+        android:dividerHeight="0dp">
+
+    </ListView>
+</RelativeLayout>
